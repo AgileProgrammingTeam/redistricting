@@ -1,11 +1,7 @@
 package metrocs.redistricting;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.Is.is;
-import static org.hamcrest.core.AnyOf.anyOf;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-import java.util.Set;
-import java.util.HashSet;
 import java.util.ArrayList;
 /**
  * Tests for Voter objects.
@@ -24,7 +20,7 @@ public class StarGeneratorTest {
         //assign same parameter, test if same result
         firstLocation = StarGenerator.generatePattern(4);
         secondLocation = StarGenerator.generatePattern(4);
-        assertEquals(firstLocation,secondLocation);
+        assertEquals(firstLocation, secondLocation);
         //assign different parameter, test if different result
 
     }
