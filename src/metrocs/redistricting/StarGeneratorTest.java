@@ -14,7 +14,7 @@ public class StarGeneratorTest {
     public void generatePatternTest() {
         ArrayList<ArrayList<Location>> firstLocation = new ArrayList<ArrayList<Location>>();
         ArrayList<ArrayList<Location>> secondLocation = new ArrayList<ArrayList<Location>>();
-        //check if method returns null
+        //check if method returns something
         assertNotNull(StarGenerator.generatePattern(1));
         assertNotNull(StarGenerator.generatePattern(4));
         //assign same parameter, test if same result
